@@ -1,0 +1,68 @@
+boostrap,js and react notes
+day1 monday 17-03-2025
+
+STEPS TO CREATE NEW GIT REPO:
+1: login to github
+2: click on plus symbol on top right side + and select new repositary
+3: name the repo and give description for that repo
+4: write the description
+5: make the repo public(default scope)
+6: select the check box add readme file
+7: click green repositary button
+
+COMMAND TO DOWNLOAD ANY PUBLIC REPO:
+
+$ git clone https://github.com/Abhi1961/pfile_fe_mar25
+the above commands copies(clones) the git repo from the server(cloud)to local machine
+Thus, we get a folder of the repo 
+
+$ git status
+The above command is use to check the status of remote repo with respect to the local repo
+
+$ git pull origin <branch name>
+$ git pull origin main
+The above cmd pulls(Downloads)the files from the server to the local.Only the files which are not updated are pulled 
+
+STEPS TO CREATE PERSONAL ACCESS TOKEN(PAT):
+
+1: On the top right most corner click on profile icon
+2: In the list of options, click on settings
+3: In the new windows scroll down little bit and click on developer settings
+4: On the left top corner click on personal access token and select tokens classic
+5: In the new window click the button generate tokens classic.
+6: In the new window add the relevant note
+7: Click expiry select no expiry
+8: Select the check box repo
+9: Scroll down fully and generate the token
+10: Copy the token and mail it to yourself
+11: Save the PAT nowhere else
+
+Note: To do the operations on our repo from a specific computer the git should recognise the git account
+To achieve this we have to run the following two commands
+
+$ git config --global Abhi1961
+$ git config --global ashraffvaran@gmail.com
+
+COMMAND TO SYNC LOCAL REPO WITH REMOTE REPO
+
+$ git clone https://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PAT@github.com/Abhi1961/pfile_fe_mar25
+
+COMMAND TO UPDATED THE REMOTE REPO WITH RESPECT TO LOCAL REPO
+
+$ git.add
+In the above cmd the git will mark (stage)all the file that need to be updated in the remote with respect to local repo.
+
+$ git commit -m "relevant message"
+In the above cmd the git creates a secured objects consisting of all the staged files and necesssary information.
+
+$ git push origin admin
+$ git push origin main
+
+
+---------------------------------------------------------------------------------------------------------------------
+BOOSTRAP NOTES
+
+Different ways to enable boostrap to our webpage
+1 Download boostrap source code and use locally
+boostrap cdn
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
